@@ -85,7 +85,7 @@ Ensure your AWS credentials are correctly set up for `boto3` to access AWS servi
 You can run the script to check for expiring SSL certificates and automatically renew them by executing:
 
 ```bash
-python ssl_management.py
+python sslfix.py
 ```
 
 The script will:
@@ -105,7 +105,7 @@ crontab -e
 
 Add the following line to run the script daily at 2 AM:
 ```bash
-0 2 * * * /usr/bin/python3 /path/to/ssl_management.py
+0 2 * * * /usr/bin/python3 /path/to/sslfix.py
 ```
 
 ## **Configuration**
